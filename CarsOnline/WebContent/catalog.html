@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Catalog</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+ rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+<body>
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<div class="page index">
+  <ul class="scheme23" id="scheme23">
+    <li class="leftColumn" id="scheme23L">
+      <div>
+        <form name="search" method="get" action="/results" style="margin: 0px; padding: 0px;" onsubmit="removeEmpty();">
+        <div class="titleBig"><h1 style="font-size:21px; margin:0px;">Searching for Cars</h1></div>
+        <ul class="searchBox" id="searchBox">
+          <li class="new">
+            <div>Секция:</div>
+            <select name="cat" onchange="javascript:changecmm(1);">
+              <option selected="" value="1">Cars</option>
+              <option value="2">Sport Cars</option>           
+            </select>
+          </li>
+          <li>
+            <div>Sort by:</div>
+            <select name="sort">
+              <option selected="" value="1">Newest</option>
+              <option value="2">Price - high</option>
+              <option value="3">Price - low</option>
+              <option value="4">Year</option>              
+            </select>
+          </li>
+          <li class="new">
+            <div id="cat3">Mark:</div>
+            <select name="marka" onchange="javascript:changecmm(2);">
+              <option selected="" value="">all</option>
+<optgroup label="A">
+<option value="Alfa Romeo">Alfa Romeo</option>
+<option value="Aston martin">Aston martin</option>
+<option value="Audi">Audi</option>
+</optgroup>
+<optgroup label="B">
+<option value="Bentley">Bentley</option>
+<option value="BMW">BMW</option>
+<option value="Bugatti">Bugatti</option>
+</optgroup>
+<optgroup label="C">
+<option value="Cadillac">Cadillac</option>
+<option value="Chevrolet">Chevrolet</option>
+<option value="Chrysler">Chrysler</option>
+<option value="Corvette">Corvette</option>
+</optgroup>
+<optgroup label="D">
+<option value="Dacia">Dacia</option>
+<option value="Dodge">Dodge</option>
+</optgroup>
+<optgroup label="F">
+<option value="Ferrari">Ferrari</option>
+<option value="Fiat">Fiat</option>
+<option value="Ford">Ford</option>
+</optgroup>
+<optgroup label="G">
+<option value="Gaz">Gaz</option>
+<option value="Great Wall">Great Wall</option>
+</optgroup>
+<optgroup label="H">
+<option value="Honda">Honda</option>
+<option value="Hummer">Hummer</option>
+<option value="Hyundai">Hyundai</option>
+</optgroup>
+<optgroup label="I">
+<option value="Infiniti">Infiniti</option>
+<option value="Isuzu">Isuzu</option>
+</optgroup>
+<optgroup label="J">
+<option value="Jaguar">Jaguar</option>
+<option value="Jeep">Jeep</option>
+</optgroup>
+<optgroup label="L">
+<option value="Lada">Lada</option>
+<option value="Lamborghini">Lamborghini</option>
+<option value="Land Rover">Land Rover</option>
+<option value="Lexus">Lexus</option>
+<option value="Lotus">Lotus</option>
+</optgroup>
+<optgroup label="M">
+<option value="Maserati">Maserati</option>
+<option value="Mazda">Mazda</option>
+<option value="McLaren">McLaren</option>
+<option value="Mercedes-Benz">Mercedes-Benz</option>
+<option value="Mitsubishi">Mitsubishi</option>
+</optgroup>
+<optgroup label="N">
+<option value="Nissan">Nissan</option>
+</optgroup>
+<optgroup label="O">
+<option value="Opel">Opel</option>
+</optgroup>
+<optgroup label="P">
+<option value="Peugeot">Peugeot</option>
+<option value="Pgo">Pgo</option>
+<option value="Plymouth">Plymouth</option>
+<option value="Pontiac">Pontiac</option>
+<option value="Porsche">Porsche</option>
+</optgroup>
+<optgroup label="R">
+<option value="Renault">Renault</option>
+<option value="Rolls-Royce">Rolls-Royce</option>
+<option value="Rover">Rover</option>
+</optgroup>
+<optgroup label="S">
+<option value="Seat">Seat</option>
+<option value="Skoda">Skoda</option>
+<option value="Smart">Smart</option>
+<option value="Subaru">Subaru</option>
+<option value="Suzuki">Suzuki</option>
+</optgroup>
+<optgroup label="T">
+<option value="Tesla">Tesla</option>
+<option value="Toyota">Toyota</option>
+</optgroup>
+<optgroup label="V">
+<option value="Volga">Volga</option>
+<option value="Volvo">Volvo</option>
+<option value="VW">VW</option>
+</optgroup>
+<optgroup label="Д">
+<option value="Други">Others</option>
+</optgroup>
+            </select>
+          </li>
+          <li>
+            <div id="cat4">Model:</div>
+            <select name="model">
+              <option selected="" value="">all</option>
+              
+            </select>
+          </li>
+
+          <li class="new">
+            <div>Цена:<label style="display:inline-block;"><input type="checkbox" name="pricedet" value="1" onclick="changePriceInputs()">детайлна</label></div>
+            <input id="pr1I" name="price" type="text" placeholder="От" style="display:none;" value="" maxlength="7">
+            <select id="pr1S" class="ot-do" style="display:block;" onchange="javascript:document.search.price.value=this.value;">
+              <option selected="" value=""></option>
+              <option value="1000">от 1000</option>
+              <option value="5000">от 5000</option>
+              <option value="10000">от 10000</option>
+              <option value="50000">от 50000</option>
+              <option value="100000">от 100000</option>            
+            </select>
+            <span class="ot-do-tire">—</span>
+            <input id="pr2I" name="price1" type="text" placeholder="До" style="display:none;" value="" maxlength="7">
+            <select id="pr2S" class="ot-do" style="display:block;" onchange="javascript:document.search.price1.value=this.value;">
+              <option selected="" value=""></option>
+              <option value="1000">до 1000</option>
+              <option value="5000">до 5000</option>
+              <option value="10000">до 10000</option>
+              <option value="15000">до 15000</option>
+              <option value="20000">до 20000</option>
+              <option value="25000">до 25000</option>
+              <option value="50000">до 50000</option>
+              <option value="100000">до 100000</option>
+              <option value="500000">до 500000</option>         
+            </select>
+          </li>
+          <li id="cat5" style="display:block;">
+            <div class="short mr">
+              <div>Engine:</div>
+              <select name="engine_type">
+                <option selected="" value="">всички типове</option>
+                <option value="Бензинов">Бензин</option>
+                <option value="Дизелов">Дизел</option>
+                <option value="Електрически">Електрически</option>
+                <option value="Хибриден">Хибриден</option>
+                
+              </select>
+            </div>
+            <div class="short">
+              <div>Speed:</div>
+                <select name="transmission">
+                  <option selected="" value="">no matter</option>
+                  <option value="Автоматична">Auto</option>
+                  <option value="Полуавтоматична">Semi Auto</option>
+                  <option value="Ръчна">Manual</option>
+                  
+                </select>
+              </div>
+          </li>
+
+          <li class="new">
+            <div>Year of build:</div>
+            <select class="ot-do" name="year">
+              <option selected="" value=""></option>
+              <option value="2010">от 2010 г.</option>
+              <option value="2009">от 2009 г.</option>
+              <option value="2008">от 2008 г.</option>
+              <option value="2007">от 2007 г.</option>
+              <option value="2006">от 2006 г.</option>
+              <option value="2005">от 2005 г.</option>
+              <option value="2004">от 2004 г.</option>
+              <option value="2003">от 2003 г.</option>
+              <option value="2002">от 2002 г.</option>
+              <option value="2001">от 2001 г.</option>
+              <option value="2000">от 2000 г.</option>              
+            </select>
+            <span class="ot-do-tire">—</span>
+            <select class="ot-do" name="year1">
+              <option selected="" value=""></option>
+              <option value="2010">до 2010 г.</option>
+              <option value="2009">до 2009 г.</option>
+              <option value="2008">до 2008 г.</option>
+              <option value="2007">до 2007 г.</option>
+              <option value="2006">до 2006 г.</option>
+              <option value="2005">до 2005 г.</option>
+              <option value="2004">до 2004 г.</option>
+              <option value="2003">до 2003 г.</option>
+              <option value="2002">до 2002 г.</option>
+              <option value="2001">до 2001 г.</option>
+              <option value="2000">до 2000 г.</option>            
+            </select>
+          </li>
+          <li>
+            <div class="short mr">
+              <div>Color:</div>
+              <select name="color">
+                <option selected="" value="">all colors</option>
+                <option value="Tъмно син">Tъмно син</option>
+                <option value="Бял">Бял</option>
+                <option value="Металик">Металик</option>
+                <option value="Син">Син</option>
+                <option value="Сребърен">Сребърен</option>
+                <option value="Черен">Черен</option>             
+              </select>
+            </div>
+            <div class="short">
+              <div>Region:</div>
+              <select name="locat">
+                <option selected="" value="">всички региони</option>
+                <option value="Бургас">Бургас</option>
+                <option value="Варна">Варна</option>
+                <option value="Пазарджик">Пазарджик</option>
+                <option value="Пловдив">Пловдив</option>
+                <option value="София">София</option>
+                <option value="Извън страната">Извън страната</option>             
+              </select>
+            </div>
+          </li>
+          <li class="large">
+            <button type="submit" onclick="">
+              <span class="button-text">Search</span>
+              <span class="button-subtext">сред <span id="cat2"> 115 692</span> обяви за <span id="cat1">Автомобили и джипове</span></span>
+            </button>
+          </li>
+          <li class="subButton"><div><span class="clever-link" data-link="myfilters">Вашите запазени търсения</span></div></li>
+          <li class="subButton"><span data-link="search" class="clever-link advSearchArrow">Разширено търсене</span></li>
+        </ul>
+        </form>
+
+        <div class="show_mobile_banners" id="m-auto-bg-all-pages2"><div id="/401112551/m.auto.bg_all_pages" style="display: none;"><script type="text/javascript">googletag.cmd.push(function() {googletag.display('/401112551/m.auto.bg_all_pages');googletag.pubads().addEventListener('slotRenderEnded', function(event) {if('/401112551/m.auto.bg_all_pages' == event.slot.getAdUnitPath() && !event.isEmpty ) {w2g.cons.info(event);w2g.cons.info('DFP: /401112551/m.auto.bg_all_pages'+' - '+ event.size);w2g.cons.info('Prebid: /401112551/m.auto.bg_all_pages'+' - '+ event.slot.getTargeting('hb_bidder')[0] +' - '+ event.slot.getTargeting('hb_size')[0]);if(document.getElementById('m-auto-bg-all-pages2').getElementsByClassName('label-wtg')[0] !== undefined){document.getElementById('m-auto-bg-all-pages2').getElementsByClassName('label-wtg')[0].style.display = 'block';}document.getElementById('m-auto-bg-all-pages2').className += ' m-auto-bg-all-pages2-loaded';if(document.getElementById('m-auto-bg-all-pages2-theme')){document.getElementById('m-auto-bg-all-pages2-theme').className += ' m-auto-bg-all-pages2-loaded';}var sspWithoutCss = 'false';if( sspWithoutCss.indexOf(event.slot.getTargeting('hb_bidder')[0]) < 0 ){document.getElementById('m-auto-bg-all-pages2').style.marginRight += 'auto';document.getElementById('m-auto-bg-all-pages2').style.marginLeft += 'auto';var sid = 'google_ads_iframe_'+event.slot.getSlotElementId()+'_0';if(event.size !== undefined && event.size[0] !== undefined && event.size[1] !== undefined && event.size[0] > 1 && event.size[1] > 1) {document.getElementById('m-auto-bg-all-pages2').style.width = 0 + 0 + event.size[0]+'px';document.getElementById('m-auto-bg-all-pages2').style.height = 'auto';document.getElementById('m-auto-bg-all-pages2').style.minHeight = event.size[1]+'px';if(document.getElementById(sid) !== null) {document.getElementById(sid).style.width = event.size[0]+'px';document.getElementById(sid).style.height = event.size[1]+'px';}window.w2g.diagnostic.send({type: 2,name: '/401112551/m.auto.bg_all_pages',send_date: new Date(),rendered: 1,viewable: 0,selector_id: '',slot_id: 'm-auto-bg-all-pages2',slot_width: event.size[0],slot_height: event.size[1]});googletag.pubads().addEventListener('impressionViewable', function (e) {if('/401112551/m.auto.bg_all_pages' == e.slot.getAdUnitPath() && !e.isEmpty ) {window.w2g.diagnostic.send({type: 2,name: '/401112551/m.auto.bg_all_pages',send_date: new Date(),rendered: 1,viewable: 1,selector_id: '',slot_id: 'm-auto-bg-all-pages2',slot_width: event.size[0],slot_height: event.size[1]});};});if(event.size[0] > 336) {document.getElementById('m-auto-bg-all-pages2').style.marginLeft += 'auto';document.getElementById('m-auto-bg-all-pages2').style.marginRight += 'auto';}} else if(event.slot.getTargeting('hb_size')[0] !== undefined) {var slotSize = event.slot.getTargeting('hb_size')[0].split('x');document.getElementById('m-auto-bg-all-pages2').style.width = 0 + 0 + parseInt(slotSize[0])+'px';document.getElementById('m-auto-bg-all-pages2').style.height = 'auto';document.getElementById('m-auto-bg-all-pages2').style.minHeight = slotSize[1]+'px';document.getElementById(sid).style.width = slotSize[0]+'px';document.getElementById(sid).style.height = slotSize[1]+'px';window.w2g.diagnostic.send({type: 2,name: '/401112551/m.auto.bg_all_pages',send_date: new Date(),rendered: 1,viewable: 0,selector_id: '',slot_id: 'm-auto-bg-all-pages2',slot_width: slotSize[0]*1,slot_height: slotSize[1]*1});googletag.pubads().addEventListener('impressionViewable', function (e) {if('/401112551/m.auto.bg_all_pages' == e.slot.getAdUnitPath() && !e.isEmpty ) {window.w2g.diagnostic.send({type: 2,name: '/401112551/m.auto.bg_all_pages',send_date: new Date(),rendered: 1,viewable: 1,selector_id: '',slot_id: 'm-auto-bg-all-pages2',slot_width: slotSize[0]*1,slot_height: slotSize[1]*1});};});if(slotSize[0] > 336) {document.getElementById('m-auto-bg-all-pages2').style.marginLeft += 'auto';document.getElementById('m-auto-bg-all-pages2').style.marginRight += 'auto';}}}}});})</script></div></div>
+
+        <form name="pub" method="post" action="/newoffer" style="margin: 0; padding: 0;">
+        <div id="sellAd">
+          <div class="price">
+          <div class="control">
+          </div>
+        </div>
+        </form>
+        <script>removeDisabled();</script>
+
+      </div>
+
+    </li>
+     <div id="car-listing">
+      <!--Car Listing for MD screen & above-->
+      <div class="table-responsive d-md-block d-none">
+        <table class="table text-center">
+          <!--Menu bar-->
+          <thead class="listing">
+            <tr class="table-secondary">
+              <th></th>
+              <th>Make </th>
+              <th>Model</th>
+              <th>Price</th>
+              <th>Depreciation</th>
+              <th>Reg Date</th>
+              <th>Mileage</th>
+              <th>Vehicle Type</th>
+              <th><input type="text" placeholder="Enter your search" /></button>
+              </th>
+            </tr>
+          </thead>
+          <!--Car Listing -->
+          <!--Mini Advert-->
+          <tbody class="listing ">
+            <tr>
+              <tr>
+                <td rowspan="3">
+                  <image src="image/car-listing/mini.jpg" class="car-image" />
+                </td>
+                <td colspan="2" class="blue text-left"><b>Mini Copper S Convertible</b></td>
+                <td class="red"><b>$158,888</b></td>
+                <td>$15,450</td>
+                <td>27-Apr-2018</td>
+                <td>13,000km</td>
+                <td>Sports</td>
+                <td rowspan="2" class="border-white text-left">
+                  <span class="car-badge badge badge-primary"> 2018</span>
+                  <span class="car-badge badge badge-primary"> Mini</span>
+                  <span class="car-badge badge badge-primary"> Cooper S</span>
+                  <span class="car-badge badge badge-primary"> 1988cc</span>
+                  <span class="car-badge badge badge-primary"> Sports</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" class="border-white  text-left">
+                  Facelifted Model! Better Power Of 280Nm In Torque And More Fuel Efficient With 7-speed (A) DCT. Excellent Fuel Consumption Of 17.5 Km/l.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="8" class="border-white text-left font-italic">Posted : 17-Jul-2019</td>
+              </tr>
+            </tr>
+          </tbody>
+          <!--Vezel Advert-->
+          <tbody class="listing ">
+            <tr>
+              <tr>
+                <td rowspan="3">
+                  <image src="image/car-listing/vezel.jpg" class="car-image" />
+                </td>
+                <td colspan="2" class="blue text-left"><b>Honda Vezel 1.5A X</b></td>
+                <td class="red"><b>$58,800</b></td>
+                <td>$8,150 /yr</td>
+                <td>16-Feb-2016</td>
+                <td>64,282 km</td>
+                <td>SUV</td>
+                <td rowspan="2" class="border-white text-left">
+                  <span class="badge badge-primary"> 2015</span>
+                  <span class="badge badge-primary"> Honda</span>
+                  <span class="badge badge-primary"> Vezel</span>
+                  <span class="badge badge-primary"> 1496cc</span>
+                  <span class="badge badge-primary"> SUV</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" class="border-white  text-left">
+                  Original Accident Free Condition, 1 Owner Only, Non Pte Hire Used, Spacious And Comfortable Ride, Price Negoti Able, Owner Selling. No Dealer Please. Msg Only. Please Do Not Call.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="8" class="border-white text-left font-italic">Posted : 13-Jul-2019</td>
+              </tr>
+            </tr>
+          </tbody>
+          <!--GLC Advert-->
+          <tbody class="listing ">
+            <tr>
+              <tr>
+                <td rowspan="3">
+                  <image src="image/car-listing/glc.jpg" class="car-image" />
+                </td>
+                <td colspan="2" class="blue text-left"><b>Mercedes-Benz GLC-Class GLC250 4MATIC</b></td>
+                <td class="red"><b>$149,800</b></td>
+                <td>$18,610 /yr</td>
+                <td>22-Apr-2016</td>
+                <td>37,000 km</td>
+                <td>SUV</td>
+                <td rowspan="2" class="border-white text-left">
+                  <span class="badge badge-primary"> 2015</span>
+                  <span class="badge badge-primary"> Mercedes-Benz</span>
+                  <span class="badge badge-primary"> GLC</span>
+                  <span class="badge badge-primary"> 1991cc</span>
+                  <span class="badge badge-primary"> SUV</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" class="border-white  text-left">
+                  Classy And Reliable Suv. Owner: Professional And Regularly Maintained. Owner Upgrading To MPV. Call Us For A Viewing Now! High Trade In And Loan Available. Viewing By Appointment. (Owner Car, Prior Arrangement Required).
+                </td>
+              </tr>
+              <tr>
+                <td colspan="8" class="border-white text-left font-italic">Posted : 25-May-2019</td>
+              </tr>
+            </tr>
+          </tbody>
+          <!--Landrover Advert-->
+          <tbody class="listing ">
+            <tr>
+              <tr>
+                <td rowspan="3">
+                  <image src="image/car-listing/land-rover.jpg" class="car-image" />
+                </td>
+                <td colspan="2" class="blue text-left"><b>Land Rover Discovery Sport 2.0A Si4 HSE 7-Seater</b></td>
+                <td class="red"><b>$148,800</b></td>
+                <td>$15,610 /yr</td>
+                <td>21-Mar-2016</td>
+                <td>20,000 km</td>
+                <td>SUV</td>
+                <td rowspan="2" class="border-white text-left">
+                  <span class="badge badge-primary"> 2015</span>
+                  <span class="badge badge-primary"> Land Rover</span>
+                  <span class="badge badge-primary"> Discovery</span>
+                  <span class="badge badge-primary"> 1999cc</span>
+                  <span class="badge badge-primary"> SUV</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" class="border-white  text-left">
+                  Drive With A Peace Of Mind With Warranty And Full Service Package By Wearnes For 2 Years And Road Tax For 1 Year. Enjoy Huge Savings Of Up To $30k Compare To A New Unit. High ARF Of $88k, Lowest Depreciation. Owner, A Professional And Recently Upgraded
+                  To URUS. High Trade In And Financing Options Available. Call Us For An Appointment Now. (Owner's Car/Viewing Location Flexible).
+                </td>
+              </tr>
+              <tr>
+                <td colspan="8" class="border-white text-left font-italic">Posted : 25-May-2019</td>
+              </tr>
+            </tr>
+          </tbody>
+          <!--Jetta Advert-->
+          <tbody class="listing ">
+            <tr>
+              <tr>
+                <td rowspan="3">
+                  <image src="image/car-listing/jetta.jpg" class="car-image" />
+                </td>
+                <td colspan="2" class="blue text-left"><b>Volkswagen Jetta 1.4</b></td>
+                <td class="red"><b>$88,800</b></td>
+                <td>$10,610 /yr</td>
+                <td>25-May-2016</td>
+                <td>45,000 km</td>
+                <td>SUV</td>
+                <td rowspan="2" class="border-white text-left">
+                  <span class="badge badge-primary"> 2015</span>
+                  <span class="badge badge-primary"> Volkswagen</span>
+                  <span class="badge badge-primary"> Jetta</span>
+                  <span class="badge badge-primary"> 1390cc</span>
+                  <span class="badge badge-primary"> Sedan</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7" class="border-white  text-left">
+                  $8k Drive Away Sedan Suites For Urban Driving. Lowest Depreciation With Low Mileage Done. Single Owner: Professional Who Always Park Under Sheltered Carpark. Option To Extend Warranty, Road Tax 1/2 Year. Owner Upgrading To New Unit. High Trade In And
+                  Financing Options Available! (Owner's Car, Viewing Location Flexible) Call Us For An Viewing Appointment!
+                </td>
+              </tr>
+              <tr>
+                <td colspan="8" class="border-white text-left font-italic">Posted : 01-May-2019</td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Car listing for mobile device-->
+      <div class="table-responsive d-md-none">
+        <div class="w-100 bg-warning p-1"></div>
+        <table class="table m-2">
+          <!--Car Listing -->
+          <!--Mini Advert-->
+          <tbody class="listing">
+            <tr>
+              <tr>
+                <td colspan="3" class="blue text-left w-35"><b>Mini Copper S Convertible</b></td>
+              </tr>
+              <tr>
+                <td rowspan="4" class="car-image-frame">
+                  <image src="image/car-listing/mini.jpg" class="car-image" />
+                </td>
+                <td class="red"><b>$158,888</b></td>
+              </tr>
+              <tr>
+                <td>Reg Date : 27-Apr-2018</td>
+              </tr>
+              <tr>
+                <td>Mileage: 13,000km</td>
+              </tr>
+              <td>
+                <span class="badge badge-primary"> 2018</span>
+                <span class="badge badge-primary"> Mini</span>
+                <span class="badge badge-primary"> Cooper S</span>
+                <span class="badge badge-primary"> 1988cc</span>
+                <span class="badge badge-primary"> Sports</span>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+          <!--Vezel Advert-->
+          <tbody class="listing">
+            <tr>
+              <tr>
+                <td colspan="3" class="blue text-left w-35"><b>Honda Vezel 1.5A X</b></td>
+              </tr>
+              <tr>
+                <td rowspan="4" class="car-image-frame">
+                  <image src="image/car-listing/vezel.jpg" class="car-image" />
+                </td>
+                <td class="red"><b>$58,800</b></td>
+              </tr>
+              <tr>
+                <td>Reg Date : 16-Feb-2016</td>
+              </tr>
+              <tr>
+                <td>Mileage: 64,282 km</td>
+              </tr>
+              <td>
+                <span class="badge badge-primary"> 2015</span>
+                <span class="badge badge-primary"> Honda</span>
+                <span class="badge badge-primary"> Vezel</span>
+                <span class="badge badge-primary"> 1496cc</span>
+                <span class="badge badge-primary"> SUV</span>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+          <!--GLC Advert-->
+          <tbody class="listing">
+            <tr>
+              <tr>
+                <td colspan="3" class="blue text-left w-35"><b>Mercedes-Benz GLC-Class GLC250 4MATIC</b></td>
+              </tr>
+              <tr>
+                <td rowspan="4" class="car-image-frame">
+                  <image src="image/car-listing/glc.jpg" class="car-image" />
+                </td>
+                <td class="red"><b>$$149,800</b></td>
+              </tr>
+              <tr>
+                <td>Reg Date : 22-Apr-2016</td>
+              </tr>
+              <tr>
+                <td>Mileage: 37,000 km</td>
+              </tr>
+              <td>
+                <span class="badge badge-primary"> 2015</span>
+                <span class="badge badge-primary"> Mercedes-Benz</span>
+                <span class="badge badge-primary"> GLC</span>
+                <span class="badge badge-primary"> 1991cc</span>
+                <span class="badge badge-primary"> SUV</span>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+          <!--Landrover Advert-->
+          <tbody class="listing">
+            <tr>
+              <tr>
+                <td colspan="3" class="blue text-left w-35"><b>Land Rover Discovery Sport 2.0A Si4 HSE 7-Seater</b></td>
+              </tr>
+              <tr>
+                <td rowspan="4" class="car-image-frame">
+                  <image src="image/car-listing/land-rover.jpg" class="car-image" />
+                </td>
+                <td class="red"><b>$148,800</b></td>
+              </tr>
+              <tr>
+                <td>Reg Date : 21-Mar-2016</td>
+              </tr>
+              <tr>
+                <td>Mileage: 20,000 km</td>
+              </tr>
+              <td>
+                <span class="badge badge-primary"> 2015</span>
+                <span class="badge badge-primary"> Land Rover</span>
+                <span class="badge badge-primary"> Discovery</span>
+                <span class="badge badge-primary"> 1999cc</span>
+                <span class="badge badge-primary"> SUV</span>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+          <!--Jetta Advert-->
+          <tbody class="listing">
+            <tr>
+              <tr>
+                <td colspan="3" class="blue text-left w-35"><b>Volkswagen Jetta 1.4</b></td>
+              </tr>
+              <tr>
+                <td rowspan="4" class="car-image-frame">
+                  <image src="image/car-listing/jetta.jpg" class="car-image" />
+                </td>
+                <td class="red"><b>$88,800</b></td>
+              </tr>
+              <tr>
+                <td>Reg Date : 25-May-2016</td>
+              </tr>
+              <tr>
+                <td>Mileage: 45,000 km</td>
+              </tr>
+              <td>
+                <span class="badge badge-primary"> 2015</span>
+                <span class="badge badge-primary"> Volkswagen</span>
+                <span class="badge badge-primary"> Jetta</span>
+                <span class="badge badge-primary"> 1390cc</span>
+                <span class="badge badge-primary"> Sedan</span>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!--Footer Section-->
+  <div class="card-group">
+    <div class="card">
+      <div class="card-body pl-5">
+        <h5 class="card-title gold"><strong>Stay Connected</strong></h5>
+        <h6 class=" font-italic"><b>Subscribe to Sellmycar community!</b></h6>
+        <p class="card-text font-italic">Join us to get update on good deals and news concerning car ownership</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body pl-5">
+        <input type="text" placeholder="Email Address" class="w-50" /><button class="bg-warning">Go</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body pl-5">
+        <h5 class="card-title gold"><strong>Follow Us</strong></h5>
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
+
+      </div>
+    </div>
+  </div>         
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+<pre>
+          <div style="width: 160px; margin:20px auto; font-size:14px; text-align:center;">Нямате записани обяви в бележника.</div>
+
+</body>
+</html>
