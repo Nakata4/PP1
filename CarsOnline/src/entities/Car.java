@@ -16,7 +16,6 @@ public class Car  {
     private Mark markTable;
     private Type typeTable;
     private Engine engineTable;
-    private Gearbox gearbox;
     private Options options;
 
     public Car() {
@@ -86,12 +85,6 @@ public class Car  {
     }
     public void setEngineTable(Engine engineTable) {
         this.engineTable = engineTable;
-    }
-    public Gearbox getGearbox() {
-        return gearbox;
-    }
-    public void setGearbox(Gearbox gearbox) {
-        this.gearbox = gearbox;
     }
     public Options getOptions() {
         return options;

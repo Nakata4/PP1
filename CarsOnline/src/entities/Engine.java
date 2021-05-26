@@ -5,7 +5,7 @@ public class Engine {
     private int volume;
     private Integer hp;
     private Integer nm;
-    private Transmission transmission;
+    private Integer transmission;
     private EngineType engineType;
 
     public Engine() {
@@ -43,7 +43,7 @@ public class Engine {
         this.nm = nm;
     }
 
-    public Transmission getTransmission() {
+    public void getTransmission() {
         return transmission;
     }
 

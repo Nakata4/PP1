@@ -4,6 +4,7 @@ import java.util.List;
 
 import entities.Mark;
 import repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import repository.Query;
 import repository.query.Param;
 

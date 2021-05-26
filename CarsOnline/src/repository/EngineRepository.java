@@ -4,6 +4,7 @@ import entities.Engine;
 import entities.EngineType;
 import entities.Transmission;
 import repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import repository.Modifying;
 import repository.Query;
 import repository.query.Param;
