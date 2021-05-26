@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Catalog</title>
+<title>Product</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
  rel="stylesheet"
   integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <section id="nav-bar">
@@ -42,18 +43,15 @@
   </div>
 </nav>
 </section>
-<div class="page index">
-  <ul class="scheme23" id="scheme23">
-    <li class="leftColumn" id="scheme23L">
-      <div>
-        <form name="search" method="get" action="/results" style="margin: 0px; padding: 0px;" onsubmit="removeEmpty();">
-        <div class="titleBig"><h1 style="font-size:21px; margin:0px;">Searching for Cars</h1></div>
-        <ul class="searchBox" id="searchBox">
+<div class="titleBig"><h1 style="font-size:21px; margin:0px;">Searching for Cars</h1></div>
+<ul class="searchBox" id="searchBox">
           <li class="new">
-            <div>Секция:</div>
+            <div>Section:</div>
             <select name="cat" onchange="javascript:changecmm(1);">
               <option selected="" value="1">Cars</option>
-              <option value="2">Sport Cars</option>           
+              <option value="2">Sport Cars</option>
+              <option value="3">Jeeps</option>
+              <option value="4">Military</option>                 
             </select>
           </li>
           <li>
@@ -173,7 +171,7 @@
           </li>
 
           <li class="new">
-            <div>Цена:<label style="display:inline-block;"><input type="checkbox" name="pricedet" value="1" onclick="changePriceInputs()">детайлна</label></div>
+            <div>Price:<label style="display:inline-block;"><input type="checkbox" name="pricedet" value="1" onclick="changePriceInputs()">детайлна</label></div>
             <input id="pr1I" name="price" type="text" placeholder="От" style="display:none;" value="" maxlength="7">
             <select id="pr1S" class="ot-do" style="display:block;" onchange="javascript:document.search.price.value=this.value;">
               <option selected="" value=""></option>
@@ -202,7 +200,7 @@
             <div class="short mr">
               <div>Engine:</div>
               <select name="engine_type">
-                <option selected="" value="">всички типове</option>
+                <option selected="" value="">all types</option>
                 <option value="Бензинов">Бензин</option>
                 <option value="Дизелов">Дизел</option>
                 <option value="Електрически">Електрически</option>
@@ -270,7 +268,7 @@
             <div class="short">
               <div>Region:</div>
               <select name="locat">
-                <option selected="" value="">всички региони</option>
+                <option selected="" value="">all regions</option>
                 <option value="Бургас">Бургас</option>
                 <option value="Варна">Варна</option>
                 <option value="Пазарджик">Пазарджик</option>
@@ -283,11 +281,11 @@
           <li class="large">
             <button type="submit" onclick="">
               <span class="button-text">Search</span>
-              <span class="button-subtext">сред <span id="cat2"> 115 692</span> обяви за <span id="cat1">Автомобили и джипове</span></span>
+              <span class="button-subtext">between <span id="cat2"> 55612</span> new <span id="cat1">Cars</span></span>
             </button>
           </li>
-          <li class="subButton"><div><span class="clever-link" data-link="myfilters">Вашите запазени търсения</span></div></li>
-          <li class="subButton"><span data-link="search" class="clever-link advSearchArrow">Разширено търсене</span></li>
+          <li class="subButton"><div><span class="clever-link" data-link="myfilters">saved searches</span></div></li>
+          <li class="subButton"><span data-link="search" class="clever-link advSearchArrow">wide search</span></li>
         </ul>
         </form>
 
@@ -304,371 +302,196 @@
 
       </div>
 
-    </li>
-     <div id="car-listing">
-      <!--Car Listing for MD screen & above-->
-      <div class="table-responsive d-md-block d-none">
-        <table class="table text-center">
-          <!--Menu bar-->
-          <thead class="listing">
-            <tr class="table-secondary">
-              <th></th>
-              <th>Make </th>
-              <th>Model</th>
-              <th>Price</th>
-              <th>Depreciation</th>
-              <th>Reg Date</th>
-              <th>Mileage</th>
-              <th>Vehicle Type</th>
-              <th><input type="text" placeholder="Enter your search" /></button>
-              </th>
-            </tr>
-          </thead>
-          <!--Car Listing -->
-          <!--Mini Advert-->
-          <tbody class="listing ">
-            <tr>
-              <tr>
-                <td rowspan="3">
-                  <image src="image/car-listing/mini.jpg" class="car-image" />
-                </td>
-                <td colspan="2" class="blue text-left"><b>Mini Copper S Convertible</b></td>
-                <td class="red"><b>$158,888</b></td>
-                <td>$15,450</td>
-                <td>27-Apr-2018</td>
-                <td>13,000km</td>
-                <td>Sports</td>
-                <td rowspan="2" class="border-white text-left">
-                  <span class="car-badge badge badge-primary"> 2018</span>
-                  <span class="car-badge badge badge-primary"> Mini</span>
-                  <span class="car-badge badge badge-primary"> Cooper S</span>
-                  <span class="car-badge badge badge-primary"> 1988cc</span>
-                  <span class="car-badge badge badge-primary"> Sports</span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="7" class="border-white  text-left">
-                  Facelifted Model! Better Power Of 280Nm In Torque And More Fuel Efficient With 7-speed (A) DCT. Excellent Fuel Consumption Of 17.5 Km/l.
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" class="border-white text-left font-italic">Posted : 17-Jul-2019</td>
-              </tr>
-            </tr>
-          </tbody>
-          <!--Vezel Advert-->
-          <tbody class="listing ">
-            <tr>
-              <tr>
-                <td rowspan="3">
-                  <image src="image/car-listing/vezel.jpg" class="car-image" />
-                </td>
-                <td colspan="2" class="blue text-left"><b>Honda Vezel 1.5A X</b></td>
-                <td class="red"><b>$58,800</b></td>
-                <td>$8,150 /yr</td>
-                <td>16-Feb-2016</td>
-                <td>64,282 km</td>
-                <td>SUV</td>
-                <td rowspan="2" class="border-white text-left">
-                  <span class="badge badge-primary"> 2015</span>
-                  <span class="badge badge-primary"> Honda</span>
-                  <span class="badge badge-primary"> Vezel</span>
-                  <span class="badge badge-primary"> 1496cc</span>
-                  <span class="badge badge-primary"> SUV</span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="7" class="border-white  text-left">
-                  Original Accident Free Condition, 1 Owner Only, Non Pte Hire Used, Spacious And Comfortable Ride, Price Negoti Able, Owner Selling. No Dealer Please. Msg Only. Please Do Not Call.
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" class="border-white text-left font-italic">Posted : 13-Jul-2019</td>
-              </tr>
-            </tr>
-          </tbody>
-          <!--GLC Advert-->
-          <tbody class="listing ">
-            <tr>
-              <tr>
-                <td rowspan="3">
-                  <image src="image/car-listing/glc.jpg" class="car-image" />
-                </td>
-                <td colspan="2" class="blue text-left"><b>Mercedes-Benz GLC-Class GLC250 4MATIC</b></td>
-                <td class="red"><b>$149,800</b></td>
-                <td>$18,610 /yr</td>
-                <td>22-Apr-2016</td>
-                <td>37,000 km</td>
-                <td>SUV</td>
-                <td rowspan="2" class="border-white text-left">
-                  <span class="badge badge-primary"> 2015</span>
-                  <span class="badge badge-primary"> Mercedes-Benz</span>
-                  <span class="badge badge-primary"> GLC</span>
-                  <span class="badge badge-primary"> 1991cc</span>
-                  <span class="badge badge-primary"> SUV</span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="7" class="border-white  text-left">
-                  Classy And Reliable Suv. Owner: Professional And Regularly Maintained. Owner Upgrading To MPV. Call Us For A Viewing Now! High Trade In And Loan Available. Viewing By Appointment. (Owner Car, Prior Arrangement Required).
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" class="border-white text-left font-italic">Posted : 25-May-2019</td>
-              </tr>
-            </tr>
-          </tbody>
-          <!--Landrover Advert-->
-          <tbody class="listing ">
-            <tr>
-              <tr>
-                <td rowspan="3">
-                  <image src="image/car-listing/land-rover.jpg" class="car-image" />
-                </td>
-                <td colspan="2" class="blue text-left"><b>Land Rover Discovery Sport 2.0A Si4 HSE 7-Seater</b></td>
-                <td class="red"><b>$148,800</b></td>
-                <td>$15,610 /yr</td>
-                <td>21-Mar-2016</td>
-                <td>20,000 km</td>
-                <td>SUV</td>
-                <td rowspan="2" class="border-white text-left">
-                  <span class="badge badge-primary"> 2015</span>
-                  <span class="badge badge-primary"> Land Rover</span>
-                  <span class="badge badge-primary"> Discovery</span>
-                  <span class="badge badge-primary"> 1999cc</span>
-                  <span class="badge badge-primary"> SUV</span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="7" class="border-white  text-left">
-                  Drive With A Peace Of Mind With Warranty And Full Service Package By Wearnes For 2 Years And Road Tax For 1 Year. Enjoy Huge Savings Of Up To $30k Compare To A New Unit. High ARF Of $88k, Lowest Depreciation. Owner, A Professional And Recently Upgraded
-                  To URUS. High Trade In And Financing Options Available. Call Us For An Appointment Now. (Owner's Car/Viewing Location Flexible).
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" class="border-white text-left font-italic">Posted : 25-May-2019</td>
-              </tr>
-            </tr>
-          </tbody>
-          <!--Jetta Advert-->
-          <tbody class="listing ">
-            <tr>
-              <tr>
-                <td rowspan="3">
-                  <image src="image/car-listing/jetta.jpg" class="car-image" />
-                </td>
-                <td colspan="2" class="blue text-left"><b>Volkswagen Jetta 1.4</b></td>
-                <td class="red"><b>$88,800</b></td>
-                <td>$10,610 /yr</td>
-                <td>25-May-2016</td>
-                <td>45,000 km</td>
-                <td>SUV</td>
-                <td rowspan="2" class="border-white text-left">
-                  <span class="badge badge-primary"> 2015</span>
-                  <span class="badge badge-primary"> Volkswagen</span>
-                  <span class="badge badge-primary"> Jetta</span>
-                  <span class="badge badge-primary"> 1390cc</span>
-                  <span class="badge badge-primary"> Sedan</span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="7" class="border-white  text-left">
-                  $8k Drive Away Sedan Suites For Urban Driving. Lowest Depreciation With Low Mileage Done. Single Owner: Professional Who Always Park Under Sheltered Carpark. Option To Extend Warranty, Road Tax 1/2 Year. Owner Upgrading To New Unit. High Trade In And
-                  Financing Options Available! (Owner's Car, Viewing Location Flexible) Call Us For An Viewing Appointment!
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" class="border-white text-left font-italic">Posted : 01-May-2019</td>
-              </tr>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!--Car listing for mobile device-->
-      <div class="table-responsive d-md-none">
-        <div class="w-100 bg-warning p-1"></div>
-        <table class="table m-2">
-          <!--Car Listing -->
-          <!--Mini Advert-->
-          <tbody class="listing">
-            <tr>
-              <tr>
-                <td colspan="3" class="blue text-left w-35"><b>Mini Copper S Convertible</b></td>
-              </tr>
-              <tr>
-                <td rowspan="4" class="car-image-frame">
-                  <image src="image/car-listing/mini.jpg" class="car-image" />
-                </td>
-                <td class="red"><b>$158,888</b></td>
-              </tr>
-              <tr>
-                <td>Reg Date : 27-Apr-2018</td>
-              </tr>
-              <tr>
-                <td>Mileage: 13,000km</td>
-              </tr>
-              <td>
-                <span class="badge badge-primary"> 2018</span>
-                <span class="badge badge-primary"> Mini</span>
-                <span class="badge badge-primary"> Cooper S</span>
-                <span class="badge badge-primary"> 1988cc</span>
-                <span class="badge badge-primary"> Sports</span>
-              </td>
-            </tr>
-            </tr>
-          </tbody>
-          <!--Vezel Advert-->
-          <tbody class="listing">
-            <tr>
-              <tr>
-                <td colspan="3" class="blue text-left w-35"><b>Honda Vezel 1.5A X</b></td>
-              </tr>
-              <tr>
-                <td rowspan="4" class="car-image-frame">
-                  <image src="image/car-listing/vezel.jpg" class="car-image" />
-                </td>
-                <td class="red"><b>$58,800</b></td>
-              </tr>
-              <tr>
-                <td>Reg Date : 16-Feb-2016</td>
-              </tr>
-              <tr>
-                <td>Mileage: 64,282 km</td>
-              </tr>
-              <td>
-                <span class="badge badge-primary"> 2015</span>
-                <span class="badge badge-primary"> Honda</span>
-                <span class="badge badge-primary"> Vezel</span>
-                <span class="badge badge-primary"> 1496cc</span>
-                <span class="badge badge-primary"> SUV</span>
-              </td>
-            </tr>
-            </tr>
-          </tbody>
-          <!--GLC Advert-->
-          <tbody class="listing">
-            <tr>
-              <tr>
-                <td colspan="3" class="blue text-left w-35"><b>Mercedes-Benz GLC-Class GLC250 4MATIC</b></td>
-              </tr>
-              <tr>
-                <td rowspan="4" class="car-image-frame">
-                  <image src="image/car-listing/glc.jpg" class="car-image" />
-                </td>
-                <td class="red"><b>$$149,800</b></td>
-              </tr>
-              <tr>
-                <td>Reg Date : 22-Apr-2016</td>
-              </tr>
-              <tr>
-                <td>Mileage: 37,000 km</td>
-              </tr>
-              <td>
-                <span class="badge badge-primary"> 2015</span>
-                <span class="badge badge-primary"> Mercedes-Benz</span>
-                <span class="badge badge-primary"> GLC</span>
-                <span class="badge badge-primary"> 1991cc</span>
-                <span class="badge badge-primary"> SUV</span>
-              </td>
-            </tr>
-            </tr>
-          </tbody>
-          <!--Landrover Advert-->
-          <tbody class="listing">
-            <tr>
-              <tr>
-                <td colspan="3" class="blue text-left w-35"><b>Land Rover Discovery Sport 2.0A Si4 HSE 7-Seater</b></td>
-              </tr>
-              <tr>
-                <td rowspan="4" class="car-image-frame">
-                  <image src="image/car-listing/land-rover.jpg" class="car-image" />
-                </td>
-                <td class="red"><b>$148,800</b></td>
-              </tr>
-              <tr>
-                <td>Reg Date : 21-Mar-2016</td>
-              </tr>
-              <tr>
-                <td>Mileage: 20,000 km</td>
-              </tr>
-              <td>
-                <span class="badge badge-primary"> 2015</span>
-                <span class="badge badge-primary"> Land Rover</span>
-                <span class="badge badge-primary"> Discovery</span>
-                <span class="badge badge-primary"> 1999cc</span>
-                <span class="badge badge-primary"> SUV</span>
-              </td>
-            </tr>
-            </tr>
-          </tbody>
-          <!--Jetta Advert-->
-          <tbody class="listing">
-            <tr>
-              <tr>
-                <td colspan="3" class="blue text-left w-35"><b>Volkswagen Jetta 1.4</b></td>
-              </tr>
-              <tr>
-                <td rowspan="4" class="car-image-frame">
-                  <image src="image/car-listing/jetta.jpg" class="car-image" />
-                </td>
-                <td class="red"><b>$88,800</b></td>
-              </tr>
-              <tr>
-                <td>Reg Date : 25-May-2016</td>
-              </tr>
-              <tr>
-                <td>Mileage: 45,000 km</td>
-              </tr>
-              <td>
-                <span class="badge badge-primary"> 2015</span>
-                <span class="badge badge-primary"> Volkswagen</span>
-                <span class="badge badge-primary"> Jetta</span>
-                <span class="badge badge-primary"> 1390cc</span>
-                <span class="badge badge-primary"> Sedan</span>
-              </td>
-            </tr>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<div class="container d-flex justify-content-center mt-50 mb-50">
+    <div class="row">
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/bmw.png" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">BMW i8</a> </h6> <a href="#" class="text-muted" data-abc="true">Cars</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$4999.99</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">3408 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2" ></i ><a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/audi.png" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Audi R8</a> </h6> <a href="#" class="text-muted" data-abc="true">Cars</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$6990.99</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">3781 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i><a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/mercedes.jpg" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Mercedes Benz</a> </h6> <a href="#" class="text-muted" data-abc="true">Sports Cars</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$3549.99</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">1264 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i><a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/bugatti.jpg" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Bugatti Veyron</a> </h6> <a href="#" class="text-muted" data-abc="true">Sports Cars</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$13599.99</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">37894 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> <a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/jeep.jpg" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Jeep Gladiator</a> </h6> <a href="#" class="text-muted" data-abc="true">Jeeps</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$8500.00</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">3098 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i><a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="img/pagani.jpg" class="card-img img-fluid" width="150" height="250" alt=""> </div>
+                </div>
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Pagani Zonda</a> </h6> <a href="#" class="text-muted" data-abc="true">Sports Cars</a>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$6789.99</h3>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">5847 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> <a href="cart.html"> Add to cart</button></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
-
-  <!--Footer Section-->
-  <div class="card-group">
-    <div class="card">
-      <div class="card-body pl-5">
-        <h5 class="card-title gold"><strong>Stay Connected</strong></h5>
-        <h6 class=" font-italic"><b>Subscribe to Sellmycar community!</b></h6>
-        <p class="card-text font-italic">Join us to get update on good deals and news concerning car ownership</p>
-      </div>
+</div>
+<section id="footer">
+<div class="container text-center">
+<p>Made With <i class="fa fa-heart-o"></i></p>
+</div>
+    <div id="footer_inner_main">
+            <div class="fpanel1">
+            <div class="row"> 
+             <div class="col-sm-6 col-md-3 item">  
+                <div>         
+              <h3>Client Service</h3>
+              <ul>
+                <li><a href="https://www.cars.com/page/faq">FAQ</a></li> 
+                <li><a href="https://www.cars.com/page/terms_of_use#item_309">Terms of use</a></li>
+                <li><a href="https://www.cars.com/page/services">Services</a></li>
+                <li><a href="https://www.cars.com/user/return_info">Return Product</a></li>
+                <li><a href="https://www.cars.com/base/send_feedback/">Feedback</a></li>
+                <li><a href="https://www.cars.com/stores/worktime">Work Time</a></li>
+                <li><a href="https://www.cars.com/subscribe/">Subscribe</a></li>
+                <li><a href="https://www.cars.com/page/leasing">Leasing</a></li>
+              </ul>
+            </div>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="https://www.cars.com/auth/login">Login</a></li>
+                <li><a href="https://www.cars.com/cart">Cart</a></li>
+                <li><a href="https://www.cars.com/user/orders">Orders</a></li>
+                <li><a href="https://www.cars.com/user/offers">Offers</a></li>
+                <li><a href="https://www.cars.com/user/profile">Profile</a></li>                
+                <li style="display: none;">
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Info and Services</h3>
+              <ul>
+                <li><a href="https://www.cars.com/among_us">Among us</a></li>
+                <li><a href="https://www.cars.com/contacts">Contacts</a></li>
+                <li><a href="https://www.cars.com/privacy">Private Info</a></li>
+                <li><a href="https://www.cars.com/declaration">Declaration of use</a></li>
+                <li><a href="https://www.cars.com/become_dealer">Dealers</a></li>
+                <li><a href="https://www.cars.com/partnership">Partners</a></li>
+                <li><a href="https://www.cars.com/stores">Find us</a></li>
+                <li><a href="https://www.cars.com/terms_of_use#item_306">How to paid</a></li>
+                <li><a href="https://www.cars.com/terms_of_use#item_307">Transport of product</a></li>
+                <li><a href="https://www.cars.com/quality_policy">Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Resources and Connections</h3>
+              <ul>
+                  <li><a href="https://www.cars.com/sitemap">Site Map</a> </li>   
+                  <li><a href="https://www.cars.com/categories">Categories</a> </li>   
+                  <li><a href="https://www.cars.com/newproduct">New products</a> </li>  
+                  <li><a href="https://www.cars.com/naiprodavani">Most Sold Products</a> </li>  
+                  <li><a href="https://www.cars.com/questions">Rating</a></li>                
+                  <li><a href="https://mail.cars.com">CAR Post</a></li>
+              </ul>
+            </div> 
+            </div> 
+            <br class="clear">  
+  <div class="footer-copyright">
+    <p class="on-desktop">
+      <span>Follow us: </span>   
+      <a href="https://facebook.com/cars/" title="Facebook" class="facebook" target="_blank" rel="nofollow"></a>
+      <a href="https://twitter.com/cars/" title="Twitter" class="twitter" target="_blank" rel="nofollow"></a>
+      <a href="https://www.instagram.com/cars/" title="Instagram" class="instagram" target="_blank" rel="nofollow"></a>
+      <a href="https://www.linkedin.com/company/cars" title="Linkedin" class="linkedin" target="_blank" rel="nofollow"></a>
+      <img src="/img/13.png" style="display: none;">
+      <img src="/img/14.png" style="display: none;">
+      <img src="/img//15.png" style="display: none;">
+      <img src="/img/16.png" style="display: none;"> 
+    </p>    
+    <div class="col-sm-4 w-30">
+                    <h4 class="footer-head">Follow us</h4>
+                    <ul>
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 w-30">
+                    <h4 class="footer-head">Contact us</h4>
+                    <ul>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> +888 888 8888</li>
+                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i>me@me.com</span></li>
+                    </ul>
+                    
+                </div>     
+    <div id="copyright-box">
+    Copyright © 2020 - 2021 CarStore all rights reserve
     </div>
-    <div class="card">
-      <div class="card-body pl-5">
-        <input type="text" placeholder="Email Address" class="w-50" /><button class="bg-warning">Go</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body pl-5">
-        <h5 class="card-title gold"><strong>Follow Us</strong></h5>
-
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-
-
-      </div>
-    </div>
-  </div>         
+  </div>
 </div>
-</div>
-</div>
-</div>
-</ul>
-</div>
-<pre>
-          <div style="width: 160px; margin:20px auto; font-size:14px; text-align:center;">Нямате записани обяви в бележника.</div>
-
+</section>
 </body>
 </html>
