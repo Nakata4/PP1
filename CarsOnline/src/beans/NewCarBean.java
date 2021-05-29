@@ -15,9 +15,7 @@ public class NewCarBean {
     private CarService carService;
     private EngineService engineService;
     private EngineTypeService engineTypeService;
-    private TransmissionService transmissionService;
     private PhotoService photoService;
-    private GearboxService gearboxService;
     private OptionsService optionsService;
     
     MarkBean markBean;
@@ -33,7 +31,6 @@ public class NewCarBean {
         car.setModel(carModelBean.getModel());
         car.setMileage(carModelBean.getMileage());
         car.setTypeTable(typeService.getTypeById(carModelBean.getTypeId()));
-        car.setGearbox(gearboxService.getGearboxById(carModelBean.getGearBoxId()));
         car.setDoors(carModelBean.getDoors());
         car.setYear(carModelBean.getYear());
         car.setColor(carModelBean.getColor());
@@ -45,7 +42,6 @@ public class NewCarBean {
         engine.setVolume(engineModelBean.getVolume());
         engine.setHp(engineModelBean.getHp());
         engine.setNm(engineModelBean.getNm());
-        engine.setTransmission(transmissionService.getTransmissionById(engineModelBean.getTransmissionId()));
         engineService.saveEngine(engine);
         car.setEngineTable(engine);
 
@@ -53,12 +49,6 @@ public class NewCarBean {
         options.setConditioner(optionsBean.getConditioner());
         options.setLeather(optionsBean.getLeather());
         options.setAlloyWheels(optionsBean.getAlloyWheels());
-        options.setXenon(optionsBean.getXenon());
-        options.setPdc(optionsBean.getPdc());
-        options.setAssHeating(optionsBean.getAssHeating());
-        options.setAscSystem(optionsBean.getAscSystem());
-        options.setNavi(optionsBean.getNavi());
-        options.setSpeakerphone(optionsBean.getSpeakerphone());
         options.setFogLights(optionsBean.getFogLights());
         options.setSignaling(optionsBean.getSignaling());
         optionsService.saveOptions(options);

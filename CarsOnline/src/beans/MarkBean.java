@@ -1,7 +1,7 @@
 package beans;
 
-import com.kraskovskij.car_shop.entities.Mark;
-import com.kraskovskij.car_shop.service.interfaces.MarkService;
+import entities.Mark;
+import interfaces.MarkService;
 import java.util.List;
 
 

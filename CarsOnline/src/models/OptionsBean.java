@@ -9,25 +9,13 @@ public class OptionsBean implements Serializable {
     private Boolean conditioner;
     private Boolean leather;
     private Boolean alloyWheels;
-    private Boolean xenon;
-    private Boolean pdc;
-    private Boolean assHeating;
-    private Boolean ascSystem;
-    private Boolean navi;
-    private Boolean speakerphone;
     private Boolean fogLights;
     private Boolean signaling;
 
     public void init() {
         conditioner = false;
         leather = false;
-        alloyWheels = false;
-        xenon = false;
-        pdc = false;
-        assHeating = false;
-        ascSystem = false;
-        navi = false;
-        speakerphone = false;
+        alloyWheels = false;        
         fogLights = false;
         signaling = false;
     }
@@ -54,54 +42,6 @@ public class OptionsBean implements Serializable {
 
     public void setAlloyWheels(Boolean alloyWheels) {
         this.alloyWheels = alloyWheels;
-    }
-
-    public Boolean getXenon() {
-        return xenon;
-    }
-
-    public void setXenon(Boolean xenon) {
-        this.xenon = xenon;
-    }
-
-    public Boolean getPdc() {
-        return pdc;
-    }
-
-    public void setPdc(Boolean pdc) {
-        this.pdc = pdc;
-    }
-
-    public Boolean getAssHeating() {
-        return assHeating;
-    }
-
-    public void setAssHeating(Boolean assHeating) {
-        this.assHeating = assHeating;
-    }
-
-    public Boolean getAscSystem() {
-        return ascSystem;
-    }
-
-    public void setAscSystem(Boolean ascSystem) {
-        this.ascSystem = ascSystem;
-    }
-
-    public Boolean getNavi() {
-        return navi;
-    }
-
-    public void setNavi(Boolean navi) {
-        this.navi = navi;
-    }
-
-    public Boolean getSpeakerphone() {
-        return speakerphone;
-    }
-
-    public void setSpeakerphone(Boolean speakerphone) {
-        this.speakerphone = speakerphone;
     }
 
     public Boolean getFogLights() {
