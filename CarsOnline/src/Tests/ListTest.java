@@ -3,8 +3,6 @@ package Tests;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.BeforeClass;
-
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

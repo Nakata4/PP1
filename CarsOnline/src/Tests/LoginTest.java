@@ -2,8 +2,6 @@ package Tests;
 
 import java.util.Scanner;
 
-import org.junit.jupiter.api.Test;
-
 import Cars.User;
 
 public class LoginTest {
@@ -30,5 +28,5 @@ public class LoginTest {
 		User test = new User();
 		String result = test.username("first_name", "last_name", null, null); 
 	}	    
-	       
+	      	
 }

@@ -51,7 +51,7 @@ public class CarBean {
     }
     public String deleteCar() {
         for (Photo photo : selectedCar.getPhotos()) {
-            File file = new File("E:\\CarShop\\WebContent\\img\\" + photo.getPath());
+            File file = new File("E:\\CarsOnline\\WebContent\\img\\" + photo.getPath());
             if (file.delete())
                 System.out.println(photo.getPath() + " delete sucessfull");
             else
