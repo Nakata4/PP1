@@ -24,7 +24,7 @@ public class PhotoBean {
         photos = new ArrayList<>();
         background = new ArrayList<>();
         for (int i = 1; i <= 4; i++)
-            background.add("images/background/background" + i + ".jpg");
+            background.add("img/background/background" + i + ".jpg");
     }
     public void uploadPhoto(FileUploadEvent e) throws IOException {
         this.uploadedFile = e.getFile();
@@ -38,7 +38,7 @@ public class PhotoBean {
                 Photo photo = new Photo();
                 File f;
                 try {
-                    f = File.createTempFile("car", ".jpg", new File("E:\\CarShop\\src\\main\\webapp\\resources\\images\\"));
+                    f = File.createTempFile("car", ".jpg", new File("E:\\CarsOnline\\src\\main\\webapp\\resources\\img\\"));
                     Files.copy(input, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
                     photo.setPath(f.getName());
                     photos.add(photo);

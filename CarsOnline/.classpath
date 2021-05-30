@@ -224,7 +224,6 @@
 			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="F:/Downloads/WeatherPortal/WebContent/WEB-INF/lib/jboss-logging-3.3.1.Final.jar"/>
 	<classpathentry kind="lib" path="/WeatherPortal/WebContent/WEB-INF/lib/jboss-logging-3.3.1.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nakata/.m2/repository/org/springframework/spring-webmvc/5.3.6/spring-webmvc-5.3.6.jar" sourcepath="C:/Users/Nakata/.m2/repository/org/springframework/spring-webmvc/5.3.6/spring-webmvc-5.3.6-sources.jar">
@@ -242,5 +241,7 @@
 			<attribute name="javadoc_location" value="http://junit.org/junit4/javadoc/latest/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="F:/Downloads/junit4.10/junit-4.10.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

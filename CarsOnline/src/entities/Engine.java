@@ -5,7 +5,6 @@ public class Engine {
     private int volume;
     private Integer hp;
     private Integer nm;
-    private Integer transmission;
     private EngineType engineType;
 
     public Engine() {
@@ -43,14 +42,6 @@ public class Engine {
         this.nm = nm;
     }
 
-    public void getTransmission() {
-        return transmission;
-    }
-
-    public void setTransmission(Transmission transmission) {
-        this.transmission = transmission;
-    }
-
     public EngineType getEngineType() {
         return engineType;
     }
@@ -64,7 +55,6 @@ public class Engine {
                 ", volume=" + volume +
                 ", hp=" + hp +
                 ", nm=" + nm +
-                ", transmission=" + transmission +
                 ", engineType=" + engineType +
                 '}';
     }

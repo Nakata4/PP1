@@ -2,8 +2,6 @@ package Tests;
 
 import java.util.Scanner;
 
-import Cars.User;
-
 public class LoginTest {
 	public static void main(String[] args) {
 	    Scanner input = new Scanner(System.in);
