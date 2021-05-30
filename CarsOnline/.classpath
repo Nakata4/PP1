@@ -165,6 +165,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="WebContent/java.js"/>
 	<classpathentry kind="src" path="/CarShop-master"/>
 	<classpathentry kind="lib" path="C:/Users/Nakata/git/ArhitekturiService/ArhitekturiService/WebContent/WEB-INF/lib/axis.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nakata/workspace/GunStore/WebContent/WEB-INF/lib/h2-1.4.200.jar"/>
@@ -236,5 +237,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Nakata/git/ArhitekturiService/ArhitekturiService/WebContent/WEB-INF/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="F:/Downloads/eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar" sourcepath="F:/Downloads/eclipse/plugins/org.junit.source_4.13.0.v20200204-1500.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://junit.org/junit4/javadoc/latest/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

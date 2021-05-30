@@ -3,6 +3,8 @@ package Tests;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.BeforeClass;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -61,4 +63,5 @@ public class ListTest extends TestCase {
         fullList.remove(Integer.valueOf(3));
         assertFalse(fullList.contains(3));
     }
+
 }
