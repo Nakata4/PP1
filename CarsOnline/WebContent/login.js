@@ -13,15 +13,6 @@ let detachedRegistrationFormHolder;
 let isRegistrationFormDrawn = false;
 let isLoginFormDetached = false;
 
-const REGISTER_URL = "http://localhost:8080/register";
-
-const METHOD_POST = "POST";
-const METHOD_GET = "GET";
-const METHOD_PUT = "PUT";
-const METHOD_DELETE = "DELETE";
-
-const errorMessage = "Error occurred while doing AJAX to ";
-
 $(document).ready(function () {
     setUpLoginFormAction();
 });
