@@ -243,5 +243,5 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="F:/Downloads/junit4.10/junit-4.10.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="output" path="build/classes"/>
+	<classpathentry kind="output" path="src"/>
 </classpath>
