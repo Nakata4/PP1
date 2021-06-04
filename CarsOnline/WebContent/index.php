@@ -65,57 +65,40 @@
 
 
 <div class="main-content">
-    <div class="wrap">
-        <div class="main-box">
-            <div class="box_wrapper"><h1>Car Brands </h1></div>
-            <div class="section group">
+    <div class="box_wrapper"><h1>Car Brands </h1></div>
 
-                <div class="col_1_of_4 span_1_of_4">
-                    <img src="images/Toyota.jpg" alt="" style="width: 375px; height: 210px;"/>
-                    <div class="grid_desc">
-                        <p class="title">TOYOTA</p>
-                    </div>
-                    <div class="Details">
-                        <a href="toyota.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
-                </div>
-
-
-                <div class="col_1_of_4 span_1_of_4">
-                    <img src="images/audi.jpg" alt="" style="width: 375px; height: 210px;"/>
-                    <div class="grid_desc">
-                        <p class="title">AUDI</p>
-                    </div>
-                    <div class="Details">
-                        <a href="audi.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
-                </div>
-
-
-                <div class="col_1_of_4 span_1_of_4">
-                    <img src="images/bmw.jpg" alt="" style="width: 375px; height: 210px;"/>
-                    <div class="grid_desc">
-                        <p class="title">BMW</p>
-                    </div>
-                    <div class="Details">
-                        <a href="bmw.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
-                </div>
-
-
-                <div class="col_1_of_4 span_1_of_4">
-                    <img src="images/Chevrolet.jpg" alt="" style="width: 375px; height: 210px;"/>
-                    <div class="grid_desc">
-                        <p class="title">CHEVROLET</p>
-                    </div>
-                    <div class="Details">
-                        <a href="chervolet.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
-                </div>
-
-
-                <div class="clear"></div>
-            </div>
-
-
+    <div class="col_1_of_4 span_1_of_4">
+        <img src="images/Toyota.jpg" alt="" style="width: 375px; height: 210px;"/>
+        <div class="grid_desc">
+            <p class="title">TOYOTA</p>
         </div>
+        <div class="Details">
+            <a href="toyota.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
     </div>
+
+
+    <div class="col_1_of_4 span_1_of_4">
+        <img src="images/audi.jpg" alt="" style="width: 375px; height: 210px;"/>
+        <div class="grid_desc">
+            <p class="title">AUDI</p>
+        </div>
+        <div class="Details">
+            <a href="audi.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
+    </div>
+
+
+    <div class="col_1_of_4 span_1_of_4">
+        <img src="images/bmw.jpg" alt="" style="width: 375px; height: 210px;"/>
+        <div class="grid_desc">
+            <p class="title">BMW</p>
+        </div>
+        <div class="Details">
+            <a href="bmw.php" title="Lorem ipsum dolor sit amet, consect etuer" class="button">cars<span></span></a></div>
+    </div>
+
+    <div class="clear"></div>
+
+
 </div>
 
 <div>
