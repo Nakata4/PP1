@@ -76,5 +76,10 @@ public class CarBean {
         Collections.reverse(sort);
         return sort;
     }
+	public void add(CarBean car) {		
+	}
+	public Object removeUser(UserBean userBean) {
+		return null;
+	}
 }
 

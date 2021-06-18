@@ -1254,5 +1254,211 @@ a {
     height: auto;
     position: relative;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+body {
+    background: #F5F1EE;
+    font-family: 'Roboto', sans-serif
+}
+
+.card {
+    width: 250px;
+    border-radius: 10px
+}
+
+.card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+span.text-muted {
+    font-size: 12px
+}
+
+small.text-muted {
+    font-size: 8px
+}
+
+h5.mb-0 {
+    font-size: 1rem
+}
+
+small.ghj {
+    font-size: 9px
+}
+
+.mid {
+    background: #ECEDF1
+}
+
+h6.ml-1 {
+    font-size: 13px
+}
+
+small.key {
+    text-decoration: underline;
+    font-size: 9px;
+    cursor: pointer
+}
+
+.btn-danger {
+    color: #FFCBD2
+}
+
+.btn-danger:focus {
+    box-shadow: none
+}
+
+small.justify-content-center {
+    font-size: 9px;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+@media screen and (max-width:600px) {
+    .col-sm-4 {
+        margin-bottom: 50px
+    }
+}
+.blog-sidebar-title{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.blog-sidebar-list{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.blog-sidebar-text{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.blog-form{
+	background-color: #F4F4F4; 
+	padding: 50px;
+	height: 1000px;
+}
+.boxed{
+	background-color: #c0aa83;
+	height: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+.subscribe-section{
+	background-image: url("../img/footer_map.png");
+	background-color:#242424;
+}
+.contact-heading{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.contact-info{
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 18px;
+}
+a.social-icon{
+	color:#242424;
+}
+
+a.social-icon:hover{
+	color:#c0aa83;
+}
+
+.social-icon{
+	background-color: #ECE4C3;
+	width: 80px;
+	height: 80px;
+	padding:20px;
+	margin: 10px;
+}
+
+.social-icon a{
+	background-color: #B98C45;
+	width: 50px;
+	height: 50px;
+	padding:10px 16px;
+	margin-right: 6px;
+	position: relative;
+	display: block;
+
+}
+
+.social-icon a:hover{
+	color:#242424;
+
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img_nature.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
   

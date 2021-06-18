@@ -12,14 +12,14 @@
           // pick the default title of your page in the title tag
             title: document.title,
           // change the text of your share as you may like; to e.g desc of your pwa
-            text: 'This is PWA Fire Demo Progressive App #pwafire #MeetMaye',
+            text: 'This is Login App',
             url: window.location.href
           })
           .then(function() {
-            console.info('PWA Fire Demo shared successfully!');
+            console.info('Registration successfully!');
           })
           .catch(function (error) {
-            console.error('Wooooooo! Some magic failed in sharing:', error);
+            console.error('Wooooooo!', error);
           })
         });
       });

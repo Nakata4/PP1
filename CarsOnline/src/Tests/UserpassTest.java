@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import org.junit.Test;
 
+import Cars.User;
+
 public class UserpassTest {
 	public static final int PASSWORD_LENGTH = 12;
 

@@ -11,5 +11,5 @@ public class User {
     private String lastName;
     private String email;
     private Byte active;
-    private Collection<RolesFrontUser> roles;
+    private Collection<CarsFrontUser> cars;
 }

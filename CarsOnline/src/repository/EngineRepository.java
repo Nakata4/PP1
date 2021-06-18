@@ -1,13 +1,11 @@
 package repository;
 
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
 import entities.Engine;
 import entities.EngineType;
-import entities.Transmission;
-import repository.JpaRepository;
-import org.springframework.data.jpa.repository.JpaRepository;
-import repository.Modifying;
-import repository.Query;
-import repository.query.Param;
 
 public interface EngineRepository extends JpaRepository<Engine, Integer>{
 

@@ -9,9 +9,8 @@ public class Login  {
 
     private Long id;
     private String firstName;
-    private String middleName;
     private String lastName;
     private String email;
 
-    private Collection<RolesFrontUser> roles;
+    private Collection<CarsFrontUser> cars;
 }
