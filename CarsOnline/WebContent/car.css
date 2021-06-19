@@ -76,8 +76,6 @@ button {
   box-shadow: 0 5px 21px rgba(0, 0, 0, 0.08);
   background-color: #fff;
 }
-
-/* LEFT SIDE */
 .productCard_leftSide {
   position: relative;
   width: 100%;
@@ -599,6 +597,3 @@ input[type=checkbox] + label, input[type=radio] + label {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
-View SCSS Code
-
-Resources
